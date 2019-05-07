@@ -4,30 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.shardingsphere</groupId>
+        <groupId>org.apache.shardingsphere.example</groupId>
         <artifactId>sharding-sphere-example</artifactId>
-        <version>4.0.0.M1-SNAPSHOT</version>
+        <version>4.0.0-RC2-SNAPSHOT</version>
     </parent>
     <artifactId>sharding-jdbc-example</artifactId>
     <packaging>pom</packaging>
-    
-    <modules>
-        <module>raw-jdbc-nodep-example</module>
-        <module>raw-jdbc-orche-example</module>
-        <module>spring-boot-nodep-example</module>
-        <module>spring-boot-orche-example</module>
-        <module>spring-namespace-nodep-example</module>
-        <module>spring-namespace-orche-example</module>
-    </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>sharding-transaction-xa-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>orchestration-example</module>
+        <module>sharding-example</module>
+        <module>transaction-example</module>
+        <module>hint-example</module>
+        <module>encrypt-example</module>
+        <module>broadcast-table-example</module>
+    </modules>
 </project>
